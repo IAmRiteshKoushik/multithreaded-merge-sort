@@ -7,7 +7,7 @@ MergeSort::MergeSort(std::vector<int> *nums) { this->nums = nums; }
 MergeSort::~MergeSort() {}
 
 void MergeSort::recursiveSort(int left, int right) {
-  if (left <= right) {
+  if (left >= right) {
     return;
   }
 
