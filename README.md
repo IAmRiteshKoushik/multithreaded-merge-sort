@@ -43,7 +43,16 @@ The following results were achieved
 Thread-cap at 35k, Arch Linux OS
 
 #### 2. C Implementation Results by [Shreyas Jenner]()
-Results incoming :construction:
+| Input Size | Single-Threaded (t1) | Multi-Threaded (t2) | Better Approach | Multi vs Single |
+|------------|----------------------|---------------------|-----------------|-----------------|
+| 1000       | 0.00113438s          | 0.000234s           | Multi-Threaded  | 79.37% faster   |
+| 10000      | 0.003876s            | 0.000202s           | Multi-Threaded  | 94.79% faster   |
+| 100000     | 0.26259s             | 0.000347s           | Multi-Threaded  | 99.87% faster   |
+| 1000000    | 0.124424s            | 0.002482s           | Multi-Threaded  | 98.01% faster   |
+| 10000000   | 1.309246s            | 0.023747s           | Multi-Threaded  | 98.19% faster   |
+
+> [!NOTE]
+> *System specifications:* 4.6 GHz Clock Speed, 16GB RAM, NVIDIA GeForce RTX 4050,
 
 #### 3. Java Implementation Results by [Kiran Rajeev](https://github.com/KiranRajeev-KV)
 | Input Size  | Parallel Merge Sort (ns) | Normal Merge Sort (ns) | Better Approach       | Multi vs Single        |
