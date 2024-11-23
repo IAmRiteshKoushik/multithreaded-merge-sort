@@ -28,7 +28,7 @@ non-parallel and parallel environments.
 
 ## Results of the Experiment
 
-#### C++ Implementation Results by [Ritesh Koushik](https://github.com/IAmRiteshKoushik)
+#### 1. C++ Implementation Results by [Ritesh Koushik](https://github.com/IAmRiteshKoushik)
 The following results were achieved
 | Input Size | Single-Threaded (t1) | Multi-Threaded (t2) | Better Approach | Speed Diff: (t1 - t2) * 100 / t2 |
 |------------|----------------------|---------------------|-----------------|----------------------------------|
@@ -39,23 +39,23 @@ The following results were achieved
 | 10000000   | 18.2698s             | 2.87343s            | Multi-Threaded  | 535% faster                      |
 
 > [!NOTE]
-> *System specifications: * 2.1 GHz Clock Speed, 16GB RAM, AMD-Ryzen 5 processor,
+> *System specifications:* 2.1 GHz Clock Speed, 16GB RAM, AMD-Ryzen 5 processor,
 Thread-cap at 35k, Arch Linux OS
 
-#### C Implementation Results by [Shreyas Jenner]()
+#### 2. C Implementation Results by [Shreyas Jenner]()
 Results incoming :construction:
 
-#### Java Implementation Results by [Kiran Rajeev]()
+#### 3. Java Implementation Results by [Kiran Rajeev]()
 Results incoming :construction:
 
-#### Rust Implementation Results by [Praneeth V]()
+#### 4. Rust Implementation Results by [Praneeth V]()
 Results incoming :construction:
 
-#### Go Implementation Results by [Unknown]()
+#### 5. Go Implementation Results by [Unknown]()
 Results incoming :construction:
 
-#### Haskell Implementation Results by [Unknown]()
+#### 6. Haskell Implementation Results by [Unknown]()
 Results incoming :construction:
 
-#### Scala Implementation Results by [Unknown]()
+#### 7. Scala Implementation Results by [Unknown]()
 Results incoming :construction:
