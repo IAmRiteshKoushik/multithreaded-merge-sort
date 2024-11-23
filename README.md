@@ -45,8 +45,18 @@ Thread-cap at 35k, Arch Linux OS
 #### 2. C Implementation Results by [Shreyas Jenner]()
 Results incoming :construction:
 
-#### 3. Java Implementation Results by [Kiran Rajeev]()
-Results incoming :construction:
+#### 3. Java Implementation Results by [Kiran Rajeev](https://github.com/KiranRajeev-KV)
+| Input Size  | Parallel Merge Sort (ns) | Normal Merge Sort (ns) | Better Approach       | Multi vs Single        |
+|-------------|--------------------------|------------------------|-----------------------|------------------------|
+| 1000        | 228426                   | 77551                  | Single-Threaded       | 194.55% slower         |
+| 10000       | 809003                   | 775331                 | Single-Threaded       | 4.34% slower           |
+| 100000      | 7715873                  | 10037808               | Multi-Threaded        | 23.13% faster          |
+| 1000000     | 31504344                 | 106750932              | Multi-Threaded        | 70.49% faster          |
+| 10000000    | 311801411                | 2247275818             | Multi-Threaded        | 86.13% faster          |
+
+> [!NOTE]
+> *System specifications:* 2.1 GHz Clock Speed, 16GB RAM, 13th Gen Intel(R) Core(TM) i7-13700HX,
+16 Core(s), 24 Logical Processor(s), Microsoft Windows 11 Pro, Version 10.0.22631 Build 22631
 
 #### 4. Rust Implementation Results by [Praneeth V]()
 Results incoming :construction:
