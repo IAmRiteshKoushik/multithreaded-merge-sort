@@ -30,13 +30,13 @@ non-parallel and parallel environments.
 
 #### 1. C++ Implementation Results by [Ritesh Koushik](https://github.com/IAmRiteshKoushik)
 The following results were achieved
-| Input Size | Single-Threaded (t1) | Multi-Threaded (t2) | Better Approach | Speed Diff: (t1 - t2) * 100 / t2 |
-|------------|----------------------|---------------------|-----------------|----------------------------------|
-| 1000       | 0.00113438s          | 0.00130357s         | Single-Threaded | 13% slower                       |
-| 10000      | 0.0136581s           | 0.0055255s          | Multi-Threaded  | 147% faster                      |
-| 100000     | 0.159913s            | 0.037813s           | Multi-Threaded  | 222% faster                      |
-| 1000000    | 1.62113s             | 0.310363s           | Multi-Threaded  | 422% faster                      |
-| 10000000   | 18.2698s             | 2.87343s            | Multi-Threaded  | 535% faster                      |
+| Input Size | Single-Threaded (t1) | Multi-Threaded (t2) | Better Approach | Multi vs Single |
+|------------|----------------------|---------------------|-----------------|-----------------|
+| 1000       | 0.00113438s          | 0.00130357s         | Single-Threaded | 13% slower      |
+| 10000      | 0.0136581s           | 0.0055255s          | Multi-Threaded  | 147% faster     |
+| 100000     | 0.159913s            | 0.037813s           | Multi-Threaded  | 222% faster     |
+| 1000000    | 1.62113s             | 0.310363s           | Multi-Threaded  | 422% faster     |
+| 10000000   | 18.2698s             | 2.87343s            | Multi-Threaded  | 535% faster     |
 
 > [!NOTE]
 > *System specifications:* 2.1 GHz Clock Speed, 16GB RAM, AMD-Ryzen 5 processor,
