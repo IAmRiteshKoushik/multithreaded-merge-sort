@@ -6,7 +6,7 @@ complexity as the first sorting methods come to mind are **Quick Sort** and
 
 **Thought** : Can we mix recursion with multithreading and make things faster ?
 
-**Preliminary Idea**
+**Preliminary Ideas**
 1. As merge sort takes a divide and conquer approach, the sub-arrays which 
 are to be further sorted individually during the divide step are not a shared 
 resource.
@@ -20,10 +20,42 @@ the OS can offer if we are to carry out the algorithm for a huge array.
 back to recursion.
 
 > [!NOTE]
-> Implemented thread pools in Go to understand their working. Check [here](./thread-pool/main.go)
+> Implemented thread pools in Go to understand their working. Check [here](https://github.com/IAmRiteshKoushik/concurrency-in-depth/)
 
-**Aim of Experiment**
+## Aim of the Experiment
 Explore Merge Sort of 10 to the power 7 elements through merge-sort in 
 non-parallel and parallel environments. 
 
+## Results of the Experiment
 
+#### C++ Implementation Results by [Ritesh Koushik](https://github.com/IAmRiteshKoushik)
+The following results were achieved
+| Input Size | Single-Threaded (t1) | Multi-Threaded (t2) | Better Approach | Speed Diff: (t1 - t2) * 100 / t2 |
+|------------|----------------------|---------------------|-----------------|----------------------------------|
+| 1000       | 0.00113438s          | 0.00130357s         | Single-Threaded | 13% slower                       |
+| 10000      | 0.0136581s           | 0.0055255s          | Multi-Threaded  | 147% faster                      |
+| 100000     | 0.159913s            | 0.037813s           | Multi-Threaded  | 222% faster                      |
+| 1000000    | 1.62113s             | 0.310363s           | Multi-Threaded  | 422% faster                      |
+| 10000000   | 18.2698s             | 2.87343s            | Multi-Threaded  | 535% faster                      |
+
+> [!NOTE]
+> *System specifications: * 2.1 GHz Clock Speed, 16GB RAM, AMD-Ryzen 5 processor,
+Thread-cap at 35k, Arch Linux OS
+
+#### C Implementation Results by [Shreyas Jenner]()
+Results incoming :construction:
+
+#### Java Implementation Results by [Kiran Rajeev]()
+Results incoming :construction:
+
+#### Rust Implementation Results by [Praneeth V]()
+Results incoming :construction:
+
+#### Go Implementation Results by [Unknown]()
+Results incoming :construction:
+
+#### Haskell Implementation Results by [Unknown]()
+Results incoming :construction:
+
+#### Scala Implementation Results by [Unknown]()
+Results incoming :construction:
