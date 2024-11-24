@@ -55,13 +55,14 @@ Thread-cap at 35k, Arch Linux OS
 > *System specifications:* 4.6 GHz Clock Speed, 16GB RAM, NVIDIA GeForce RTX 4050, Arch Linux OS
 
 #### 3. Java Implementation Results by [Kiran Rajeev](https://github.com/KiranRajeev-KV)
-| Input Size  | Parallel Merge Sort (ns) | Normal Merge Sort (ns) | Better Approach       | Multi vs Single        |
-|-------------|--------------------------|------------------------|-----------------------|------------------------|
-| 1000        | 228426                   | 77551                  | Single-Threaded       | 194.55% slower         |
-| 10000       | 809003                   | 775331                 | Single-Threaded       | 4.34% slower           |
-| 100000      | 7715873                  | 10037808               | Multi-Threaded        | 23.13% faster          |
-| 1000000     | 31504344                 | 106750932              | Multi-Threaded        | 70.49% faster          |
-| 10000000    | 311801411                | 2247275818             | Multi-Threaded        | 86.13% faster          |
+| Input Size | Single-Threaded (t1)| Multi-Threaded (t2) | Better Approach | Multi vs Single|
+|-------------|--------------------|---------------------|-----------------|----------------|
+| 1000       | 0.000077551s        | 0.000228426s        | Single-Threaded | 194.55% slower |
+| 10000      | 0.000775331s        | 0.000809003s        | Single-Threaded | 4.34% slower   |
+| 100000     | 0.010037808s        | 0.007715873s        | Multi-Threaded  | 23.13% faster  |
+| 1000000    | 0.106750932s        | 0.031504344s        | Multi-Threaded  | 70.49% faster  |
+| 10000000   | 2.247275818s        | 0.311801411s        | Multi-Threaded  | 86.13% faster  |
+
 
 > [!NOTE]
 > *System specifications:* 2.1 GHz Clock Speed, 16GB RAM, 13th Gen Intel(R) Core(TM) i7-13700HX,
