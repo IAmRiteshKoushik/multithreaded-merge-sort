@@ -68,8 +68,18 @@ Thread-cap at 35k, Arch Linux OS
 > *System specifications:* 2.1 GHz Clock Speed, 16GB RAM, 13th Gen Intel(R) Core(TM) i7-13700HX,
 16 Core(s), 24 Logical Processor(s), Microsoft Windows 11 Pro, Version 10.0.22631 Build 22631
 
-#### 4. Rust Implementation Results by [Praneeth V]()
-Results incoming :construction:
+#### 4. Rust Implementation Results by [Praneeth V](https://github.com/PraneethV-cmd)
+| Input Size | Single-Threaded (t1)| Multi-Threaded (t2) | Better Approach | Multi vs Single|
+|-------------|--------------------|---------------------|-----------------|----------------|
+| 1000       | 0.00148s            | 0.00105s            | Multi-Threaded  | 40.95% faster  |
+| 10000      | 0.00672s            | 0.00290s            | Multi-Threaded  | 131.724% faster|
+| 100000     | 0.03503s            | 0.00627s            | Multi-Threaded  | 458.69% faster |
+| 1000000    | 0.32139s            | 0.05298s            | Multi-Threaded  | 506.625% faster|
+| 10000000   | 3.67s               | 0.56616s            | Multi-Threaded  | 548.226% faster|
+
+
+> [!NOTE]
+> *System specifications:* 4.1 GHz Clock Speed, 18GB RAM, macOS Sequoia (Version 15.1.1)
 
 #### 5. Go Implementation Results by [Unknown]()
 Results incoming :construction:
