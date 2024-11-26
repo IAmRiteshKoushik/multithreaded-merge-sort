@@ -81,8 +81,17 @@ Thread-cap at 35k, Arch Linux OS
 > [!NOTE]
 > *System specifications:* 4.1 GHz Clock Speed, 18GB RAM, macOS Sequoia (Version 15.1.1)
 
-#### 5. Go Implementation Results by [Unknown]()
-Results incoming :construction:
+#### 5. Go Implementation Results by [Nandgopal R Nair](https://github.com/Nandgopal-R)
+| Input Size | Single-Threaded (t1) | Multi-Threaded (t2) | Better Approach  | Multi vs Single    |
+|------------|----------------------|---------------------|------------------|--------------------|
+| 1000       | 0.000053600s         | 0.000581200s        | Single-Threaded  | -90.78% slower     |
+| 10000      | 0.002257300s         | 0.001191100s        | Multi-Threaded   | 89.51% faster      |
+| 100000     | 0.024606200s         | 0.006966100s        | Multi-Threaded   | 253.23% faster     |
+| 1000000    | 0.243581600s         | 0.071530600s        | Multi-Threaded   | 240.53% faster     |
+| 10000000   | 2.657344100s         | 0.664982000s        | Multi-Threaded   | 299.61% faster     |
+
+> [!NOTE]
+> *System specifications:* 2.1 GHz Clock Speed, 8GB RAM, AMD Ryzen 5 5500U with Radeon Graphics, Windows 11 Home Single Language
 
 #### 6. Haskell Implementation Results by [Unknown]()
 Results incoming :construction:
